@@ -60,4 +60,25 @@ const input = document.querySelector(".form-label input");
     //     alert("Nhap sai,Vui long nhap lai")
     // }
 });
+function resetInput(){
+  let register_password = document.querySelector(".register-form #password").value=""
+  let register_user = document.querySelector(".register-form #username").value=""
 
+}
+const form = document.querySelector('.form-group');
+console.log("🚀 ~ file: login.js:64 ~ form:", form)
+const register_link = document.querySelector('.register-link');
+const login_link = document.querySelector('.login-link');
+const register_form = document.querySelector('.register-form');
+register_link.addEventListener('click', function () {
+
+  form.classList.add('active');
+  register_form.style.opacity = "1"
+  resetInput()
+});
+
+login_link.addEventListener('click', function () {
+  form.classList.remove('active');
+  register_form.style.opacity = "0"
+  resetInput()
+});
