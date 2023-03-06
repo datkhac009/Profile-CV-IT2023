@@ -33,11 +33,14 @@ $('.owl-carousel').owlCarousel({
     // console.log(event);
     let currentScroll = event.target.scrollingElement.scrollTop;
     console.log("🚀 ~ file: index.js:33 ~ currentScroll:", Math.floor(currentScroll))
+    let icon = document.querySelector('.nav-menu i');
     if (lastScroll < currentScroll) {
       header.classList.add('open');
       if (navList.classList.contains('open'))
         navList.classList.remove('open');
-    } else
+        icon.classList.remove("fa-xmark")
+        icon.classList.add("fa-bars")
+    } else        
     header.classList.remove('open');
     lastScroll = currentScroll;
     return lastScroll
@@ -45,12 +48,20 @@ $('.owl-carousel').owlCarousel({
   });  
 
 
-$(document).ready(function(){
-  $("#menu-icon").click(function(){
-    $(".nav-list").toggleClass("open");
-  });
-  });
 
+  const menu_icon = document.querySelector('#menu-icon');
+  menu_icon.addEventListener('click', function () {
+    let icon = document.querySelector('.nav-menu i');
+    let nav_list = document.querySelector('.nav-list');
+    nav_list.classList.toggle("open")
+    if(icon.classList.contains("fa-bars")){
+      icon.classList.remove("fa-bars");
+      icon.classList.add("fa-xmark");
+    }else if(icon.classList.contains("fa-xmark")){
+      icon.classList.add("fa-bars");
+      icon.classList.remove("fa-xmark");
+    }
+  });
 const sroll_to = document.querySelectorAll(".scroll_to");
 sroll_to.forEach((items)=>{
   items.addEventListener("click",()=>{
@@ -87,5 +98,15 @@ window.addEventListener("scroll",(event)=>{
     
   
 })
+// Typing Effect
+let typed = new Typed(".auto",{
+  strings:["FONT-END DEVELOPER ❤","UX/UIDESIGNER ❤","FREELANCER ❤"],
+  typeSpeed :40,
+  backSpeed:70,
+  backDelay:2000,
+  smartBackspace: true,
+  loop:true,
+})
+
   
 

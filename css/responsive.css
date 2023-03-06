@@ -63,6 +63,7 @@
   .contact-info i {
     font-size: 1.4rem;
   }
+  
 }
 @media only screen and (max-width: 756.98px) {
   :root{
@@ -174,6 +175,7 @@
   .open {
     top: 0%;
   }
+
 }
 
 @media only screen and (max-width: 600.98px) {
