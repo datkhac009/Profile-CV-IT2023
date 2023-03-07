@@ -1,5 +1,5 @@
 
-const input = document.querySelector(".form-label input");
+    const input = document.querySelector(".form-label input");
     const icon = document.querySelector('.form-label .icon');
     const icon_key = document.querySelector('.fa-key');
     input.addEventListener('keyup', function () {
@@ -68,18 +68,22 @@ const input = document.querySelector(".form-label input");
     //     alert("Nhap sai,Vui long nhap lai")
     // }
 });
+
 function resetInput(){
   let register_password = document.querySelector(".register-form #password").value=""
   let register_user = document.querySelector(".register-form #username").value=""
 
 }
+
+
+
 const form = document.querySelector('.form-group');
-console.log("🚀 ~ file: login.js:64 ~ form:", form)
 const register_link = document.querySelector('.register-link');
 const login_link = document.querySelector('.login-link');
 const register_form = document.querySelector('.register-form');
-register_link.addEventListener('click', function () {
 
+
+register_link.addEventListener('click', function () {
   form.classList.add('active');
   register_form.style.opacity = "1"
   resetInput()
