@@ -94,3 +94,16 @@ login_link.addEventListener('click', function () {
   register_form.style.opacity = "0"
   resetInput()
 });
+
+
+const body = document.querySelector('body');
+const loading =  body.querySelector('.loader');
+
+window.addEventListener('load', function () {
+  setTimeout(function() { 
+    loading.classList.add("loader-hidden")
+  }, 1500);
+  loading.addEventListener('transitionend', function () {
+    body.removeChild("loader-hidden")
+    });
+});

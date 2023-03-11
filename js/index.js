@@ -1,4 +1,19 @@
+function exit () {
+  setTimeout(function() {
+    alert('Exit successfully');
+    window.location.href= "login.html"
+  }, 1000);
+  // let a = id -3
+  // console.log(a);
 
+}
+const header_menu = document.querySelector('.header-menu');
+const exit_menu = document.querySelector(".nav-exit p")
+exit_menu.addEventListener('click', function () {
+  console.log("Done");
+  exit()
+
+});
 
 $('.owl-carousel').owlCarousel({
     items:3,
@@ -65,7 +80,7 @@ $('.owl-carousel').owlCarousel({
 const sroll_to = document.querySelectorAll(".scroll_to");
 sroll_to.forEach((items)=>{
   items.addEventListener("click",()=>{
-  const el =   document.getElementById(items.getAttribute("data-link"))
+  const el =   document.getElementById(items.getAttribute("click-link"))
   el.scrollIntoView({
     behavior:"smooth",
     block:"center"
@@ -107,6 +122,16 @@ let typed = new Typed(".auto",{
   smartBackspace: true,
   loop:true,
 })
+const body = document.querySelector('body');
+const loading =  body.querySelector('.loader');
 
+window.addEventListener('load', function () {
+  setTimeout(function() { 
+    loading.classList.add("loader-hidden")
+  }, 1500);
+  loading.addEventListener('transitionend', function () {
+    body.removeChild("loader-hidden")
+    });
+});
   
 
