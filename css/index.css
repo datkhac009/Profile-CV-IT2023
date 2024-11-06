@@ -12,9 +12,7 @@
   --color-gradient: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
 }
 
-.wapper {
 
-}
 .blur-overlay {
   position: fixed;
   top: 0;
@@ -196,10 +194,7 @@ ion-icon {
   margin-left: 25px;
   display: none;
 }
-.header-introduce {
-  
-  
-}
+
 .header-introduce_yourself {
   line-height: 3rem;
   padding-top: 30rem;
@@ -298,9 +293,7 @@ ion-icon {
 }
 
 /* section */
-.section {
-  
-}
+
 .section .section-story {
   background: #212529;
   display: flex;
@@ -362,8 +355,7 @@ ion-icon {
 .mb-1 {
   margin-bottom: 1em;
 }
-.items-skill {
-}
+
 .items-skill .items-skill-img {
   display: flex;
   background: #252525;
