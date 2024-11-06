@@ -87,7 +87,7 @@ body{
 .form-group .form-label label{
     position: absolute;
     top: 40%;
-    left: -95px;
+    left: -200px;
     transform: translateY(-20%);
     font-size: 1.2rem;
     font-weight: bold;
@@ -147,7 +147,7 @@ body{
 }
 .form-group.active .login-form{
     transition: none;
-    transform: translateX(-400px);
+    transform: translateX(-500px);
 }
 .register,.login{
     display: flex;
@@ -160,7 +160,7 @@ body{
 }
 .form-group .register-form{
     position: absolute;
-    transform: translateX(500px);
+    transform: translateX(600px);
    
     
 }

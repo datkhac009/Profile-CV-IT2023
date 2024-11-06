@@ -81,6 +81,11 @@
   .header-introduce {
     padding: 25% 6%;
   }
+  .header-introduce_yourself{
+    padding-top: 30%;
+    padding-bottom: 10%;
+    padding-left: 5rem;
+  }
   .header-introduce .header-introduce_yourself > h2 {
     font-size: 33px;
   }
@@ -198,8 +203,9 @@
     display: none;
   }
   .header-introduce_yourself{
-    padding-top: 30%;
+    padding-top: 50%;
     padding-bottom: 10%;
+    padding-left: 5rem;
   }
   .header-introduce .header-introduce_yourself > h2 {
     font-size: 30px;
@@ -322,6 +328,7 @@
   .header-introduce_yourself{
     padding-top: 30%;
     padding-bottom: 10%;
+    padding-left: 5rem;
   }
   .header-introduce .header-introduce_yourself > h2 {
     font-size: 30px;
@@ -458,6 +465,7 @@
   .header-introduce_yourself {
     padding-top: 30%;
     padding-bottom: 10%;
+    padding-left: 1rem;
   }
   .header-introduce .header-introduce_yourself > h2 {
     font-size: 30px;
